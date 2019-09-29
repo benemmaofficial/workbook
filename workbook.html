@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core@4.7.4/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core@4.7.4/dist/ionic/ionic.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core@4.7.4/css/ionic.bundle.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Workbook 2.0</title>
+</head>
+<body>
+<ion-app>
+    <ion-content>
+        <ion-header>
+            <ion-toolbar color="">
+                <ion-title class="navbar-brand">
+                    Workbook
+                </ion-title>
+            </ion-toolbar>
+        </ion-header>
+<!------------------------------------------------------------------>
+    <!--workbook application form starts here-->
+        <ion-grid id="bg">
+        <ion-row>
+            <ion-col size-md="6" offset-md="3">
+                <div id="card">
+                    <ion-card >
+                        <ion-card-header>
+                            <ion-card-title>
+                                Apply To Workbook!
+                            </ion-card-title>
+                        </ion-card-header>
+                        <ion-card-content>
+                            <ion-item-group>
+                                <form action="#" name="form" onsubmit="return(validate());">
+                                    <ion-item>
+                                            <ion-label for="name" position="fixed">Name</ion-label>
+                                            <ion-input id="" type="text" name="name" placeholder="Enter your name..."></ion-input>
+                                        </ion-item>
+                                        <ion-item>
+                                            <ion-label position="fixed">Email</ion-label>
+                                            <ion-input type="email" name="email" placeholder="Enter your Email address..."></ion-input>
+                                        </ion-item>
+                                        <ion-item>
+                                                <ion-label position="fixed">Postcode</ion-label>
+                                                <ion-input type="text" name="postcode" placeholder="Enter your postcode..."></ion-input>
+                                        </ion-item>
+                                        <ion-item>
+                                                <ion-label position="fixed">Choice</ion-label>
+                                                <ion-select name="choice" placeholder="Choose">
+                                                    <ion-select-option>1</ion-select-option>
+                                                    <ion-select-option>2</ion-select-option>
+                                                    <ion-select-option>3</ion-select-option>
+                                                </ion-select>
+                                        </ion-item>
+                                            <ion-button fill="outline" color="danger" slot="end" type="reset">
+                                                    <ion-icon name="eye-off"></ion-icon>  Cancel
+                                            </ion-button>
+                                            <ion-button type="ion-submit" color="success">
+                                                <ion-icon name="checkmark-circle" class="ion-text"></ion-icon>
+                                                Apply
+                                            </ion-button>
+                                </form>
+                            </ion-item-group>
+                        </ion-card-content>
+                    </ion-card>
+                    </div>
+            </ion-col>
+        </ion-row>
+        </ion-grid>
+        <!--workbook application form ends here-->
+        <!--Footer credits starts-->
+        <ion-footer>
+            <ion-toolbar>
+                <ion-title>Made with ♡ By <a href="https://www.benemma.co.uk" target="_blank">Ben Emma</a></ion-title>
+            </ion-toolbar>
+        </ion-footer>
+        <!--Footer credits ends-->
+    </ion-content>
+    <ion-alert-controller></ion-alert-controller>
+</ion-app>
+<script src="app.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script type="module" src="https://cdn.jsdelivr.net/npm/ionicons@4.7.4/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://cdn.jsdelivr.net/npm/ionicons@4.7.4/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

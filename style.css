@@ -1,0 +1,18 @@
+body, html {
+    height: 100%;
+  }
+  
+  #bg {
+    background-image: url("https://images.pexels.com/photos/1765033/pexels-photo-1765033.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+#card{
+    margin: auto;
+    vertical-align: middle;
+    padding: 15% 0;
+}
+
