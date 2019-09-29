@@ -47,11 +47,3 @@ function validate() {
       return true;
 }
 const displayAlert = document.querySelector('ion-alert-controller');
-
-//NEW SCRIPTS 
-$('#myCarousel').on('slid.bs.carousel', function (e) {
-    $('#myCarousel').carousel('2')
-  })
-  
-  $('#myCarousel').carousel('1')
-  $('#myCarousel').carousel('2') 
